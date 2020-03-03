@@ -9,7 +9,7 @@ body {
 
 /* NAV STUFF */
 .nav {
-  width: 100%;
+  width: 1440px;
   height: 104px;
   background-color: #232424;
   display: flex;
@@ -78,22 +78,25 @@ body {
 /* HERO IMAGE STUFF */
 .hero {
     background-image: url('../assets/hero-image.png');
-    width: 1440px;
-    height: 592px;
-    object-fit: contain;
     background-repeat: no-repeat;
-    ;
+    background-size: 1440px 592px;
+    max-width: 1440px;
+    height: 592px;
 }
 
 
 /* SCROLL STUFF */
 .scroll {
     color: black;
+    width: 1100px;
+    margin: 0 auto;
 }
 
 .scroll__top {
   width: 1094px;
   height: 93px;
+  margin-top: 350px;
+  background-color: #ffedc1;
 }
 
 .scroll__middle {
@@ -111,12 +114,47 @@ body {
 }
 
 
+.scroll__content {
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.scroll__title {
+    margin: 0;
+    /* padding-top: 50px; */
+    font-family: 'Princess Sofia';
+    font-size: 56px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    
+}
+
+
+.scroll__text {
+    text-align: center;
+}
+
+
 /* NOTE PAD STUFF */
+.container__main {
+    width: 1440px;
+    margin: 200px auto;
+    
+}
+
+
 .note {
     width: 632px;
     height: 576px;
     box-shadow: 0 8px 8px 0 rgba(35, 36, 36, 0.2);
     background-color: #ffffff;
+    float: left;
 }
 
 
@@ -154,6 +192,11 @@ body {
 
 
 /* VIDEO STUFF */
+.video {
+    float: right;
+}
+
+
 .video__title {
     width: 459px;
     height: 64px;
@@ -172,15 +215,16 @@ body {
   width: 632px;
   height: 356px;
   background-color: #d8d8d8;
+  margin: 0 auto;
 }
 
 
 /* WAVE STUFF */
-.wave {
+/* .wave {
     width: 1440px;
     height: 660px;
     background-color: #bbf3f9;
-}
+} */
 
 
 .wave__top {
@@ -256,6 +300,8 @@ body {
     width: 1440px;
     height: 80px;
     background-color: #000000;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer__text {
