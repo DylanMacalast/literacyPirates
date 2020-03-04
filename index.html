@@ -7,16 +7,14 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__logo">Literacy Pirates</li>
-            <li class="nav__item"><a href="#" class="nav__links nav__button">CONTACT US</a></li>
-            <li class="nav__item"><a href="#" class="nav__links nav__button-border">VOLUNTEER</a></li>
-            <li class="nav__item"><a href="#" class="nav__links nav__button-border">DONATE</a></li>
-        </ul>
-
-    </nav>
-
+    <div class="nav">
+        <span class="nav__logo">Literacy Pirates</span>
+        <nav class="nav__list">
+            <a href="#" class="nav__links nav__button">CONTACT US</a>
+            <a href="#" class="nav__links nav__button-border">VOLUNTEER</a>
+            <a href="#" class="nav__links nav__button-border">DONATE</a>
+        </nav>
+    </div>
     <header class="hero">
         <div class="scroll">
             <img src="assets/scroll-top.png" class="scroll__top">
@@ -36,10 +34,10 @@
     <main class="main">
         <section class="container__main">
             <aside class="note">
-                <h2 class="note__title">What We Do</h2>
+                <h2 class="note__title">What we do</h2>
                 <p class="note__text">
-                    Teachers devise and lead our learning programme. The children read with an adult in 121 or small groups, focusing on the enjoyment of reading. Then children work on a piece of creative writing. Each term we publish their work in a unique and high quality book, film script or web app. Every term we have a big event to celebrate the publication!
-                    The support in reading and writing comes from our family of volunteers, who we call ‘Crewmates’. Anyone can be a Crewmate! We train and support our volunteers throughout their time with us.
+                    Teachers devise and lead our learning programme. The children read with an adult in 121 or small groups, focusing on the enjoyment of reading. Then children work on a piece of creative writing. Each term we publish their work in a unique and high quality book, film script or web app. Every term we have a big event to celebrate the publication!<br><br>
+                    The support in reading and writing comes from our family of volunteers, who we call ‘Crewmates’. Anyone can be a Crewmate! We train and support our volunteers throughout their time with us. <br><br>
                     We are currently recruiting volunteers for the Portsmouth Pirates. Please fill our our volunteer form if you want to become a Crewmate.
                 </p>
                 <a href="#" class="note__button">VOLUNTEER FORM</a>
@@ -51,58 +49,49 @@
             </aside>
         </section>
 
-        <section class="wave">
-            <img src="assets/wave-topper.png" class="wave__top">
-            <img src="assets/wave-topper-dark.png" class="wave__top-dark">
+         <section class="wave">
             <h2 class="wave__title">Our impact on young pirates</h2>
+            <div class="porthole__stretch">
+                <div class="porthole">
+                    <img src="assets/porthole_3.png" class="porthole__image">
+                    <p>
+                        Reading age improved <b>50%</b> faster than age related expectations
+                    </p>
+                </div>
 
-            <div class="porthole">
-                <img src="assets/porthole.png" class="porthole__image">
-                <span class="icon">
-                    <img src="assets/reading-age-icon.png" class="icon__image">
-                </span>
-                <p class="porthole__text">
-                    Reading age improved 50% faster than age related expectations
-                </p>
+                <div class="porthole">
+                    <img src="assets/porthole_2.png" class="porthole__image">
+                    <p>
+                        <b>100%</b> of parents have seen a positive impact on literacy abilities 
+                    </p>
+                </div>
+
+                <div class="porthole">
+                    <img src="assets/porthole_1.png" class="porthole__image">
+                    <p>
+                        Reading increased from once weekly to multiple times or every day!
+                    </p>
+                </div>
+            
             </div>
-
-            <div class="porthole">
-                <img src="assets/porthole.png" class="porthole__image">
-                <span class="icon">
-                    <img src="assets/literacy-icon.png" class="icon__image">
-                </span>
-                <p class="porthole__text">
-                    100% of parents have seen a positive impact on literacy abilities 
-                </p>
+            <div class="donate">
+                <a href="#" class="wave__button">MAKE A DONATION</a>
             </div>
-
-            <div class="porthole">
-                <img src="assets/porthole.png" class="porthole__image">
-                <span class="icon">
-                    <img src="assets/reading-icon.png" class="icon__image">
-                </span>
-                <p class="porthole__text">
-                    Reading increased from once weekly to multiple times or every day!
-                </p>
-            </div>
-
-            <a href="#" class="wave__button">MAKE A DONATION</a>
 
         </section>
     </main>
 
-    <!-- <footer class="footer">
-
-        <p class="footer__text">
-            Registered Charity: 1145115 (C) Ship of Adventures 2014
-        </p>
-        <img src="./assets/email.png">
-        <img src="./assets/youtube.png">
-        <img src="./assets/facebook.png">
-        <img src="./assets/twitter.png">
-
-    </footer> -->
-
+    <footer class="footer">
+        <div class="footer__text">
+          <p>Registered Charity: 1145115 (C) Ship of Adventures 2014</p>
+        </div>
+        <div class="social-media__icons">
+          <a href=""><img id="email" src="./assets/email.svg"></a>
+          <a href=""><img id="youtube" src="./assets/youtube.svg"></a>
+          <a href=""><img id="facebook" src="./assets/facebook.svg"></a>
+          <a href=""><img id="twitter" src="./assets/twitter.svg"></a>
+        </div>
+    </footer>
     
 </body>
 </html>
