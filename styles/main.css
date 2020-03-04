@@ -67,45 +67,36 @@ body {
 .hero {
     background-image: url('../assets/hero-image.png');
     background-repeat: no-repeat;
-    background-size: 1440px 592px;
-    max-width: 1440px;
+    background-size: 100% 592px;
+    max-width: 100%;
     height: 592px;
 }
+
+
+.hero__space {
+    height: 400px;
+    margin-top: 0;
+}
+
 
 
 /* SCROLL STUFF */
 .scroll {
     color: black;
     width: 1100px;
+    height: 800px;
     margin: 0 auto;
+    background-image: url("../assets/whole_scroll.png");
+    background-size: 1094px 421px;
+    background-repeat: no-repeat;
 }
 
-.scroll__top {
-  width: 1094px;
-  height: 93px;
-  margin-top: 350px;
-  background-color: #ffedc1;
-}
-
-.scroll__middle {
-    width: 1075px;
-    height: 264px;
-    background-image: linear-gradient(to bottom, #ffffff, #ffedc1 81%);
-  
-}
-
-
-.scroll__bottom {
-    width: 1080px;
-    height: 64px;
-    background-color: #ffedc1;
-}
 
 
 .scroll__content {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
-    padding: 50px;
+    padding: 100px;
 }
 
 .scroll__title {
@@ -126,10 +117,18 @@ body {
 
 .scroll__text {
     text-align: center;
+    line-height: 36px;
+    font-size: 20px;
+}
+
+
+.scroll__underline {
+    text-decoration: underline;
 }
 
 
 /* NOTE PAD STUFF */
+
 .container__main {
     max-width: 1440px;
     margin: 200px auto;
@@ -140,13 +139,14 @@ body {
 
 
 .note {
-    width: 632px;
+    width: 43%;
     height: 576px;
     box-shadow: 0 8px 8px 0 rgba(35, 36, 36, 0.2);
     background-color: #ffffff;
     float: left;
     background-image: url("../assets/note_lines.png");
     margin: 0 auto;
+    padding-right: 5px;
 }
 
 
@@ -193,6 +193,8 @@ body {
 /* VIDEO STUFF */
 .video {
     float: right;
+    width: 43%;
+    padding-left: 5px;
 }
 
 
@@ -221,6 +223,11 @@ body {
 
 
 /* WAVE STUFF */
+.wave {
+    background-color: #bbf3f9;
+    background-size: 100%;
+}
+
 
 .wave__title {
     font-family: 'Princess Sofia';
@@ -232,15 +239,17 @@ body {
     letter-spacing: normal;
     text-align: center;
     color: #000000;
+    padding-top: 100px;
 }
 
 
-.donate {
+
+
+.donate__container {
     width: 100%;
-    margin-bottom: 100px;
-
+    padding: 50px 0 100px 0;
+    text-align: center;
 }
-
 
 .wave__button {
     font-size: 16px;
@@ -265,13 +274,11 @@ body {
     flex-direction: row;
     justify-content: space-between;
     padding: 40px 183px;
-    background-color: #bbf3f9;
 }
 
 
 .porthole {
     width: 276px;
-    background-color: #bbf3f9;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -305,13 +312,9 @@ body {
 
 
 
-
-
-
-
 /* FOOTER STUFF */
 .footer {
-    width: 1440px;
+    width: 100%;
     height: 80px;
     background-color: #000000;
     position: relative;
@@ -353,17 +356,526 @@ body {
 
 
 
+/* Media for normal laptop */
+@media only screen and (max-width: 1300px)
+{
 
 
+    .nav {
+        width: 100%;
+        height: 104px;
+    }
+    .nav__list {
+        flex-direction: row;
+        margin-right: 0;
+    }
+    .nav__logo {
+        left: 20px;
+    }
+
+    .nav__button {
+        margin-right: 25px;
+    }
+    .nav__button-border {
+        margin-right: 25px;
+    }
+    .nav__links{
+        text-decoration: none;
+        color: #fff;
+    }
+
+
+
+    /* HERO IMAGE STUFF */
+
+
+    .hero__space {
+        height: 421px;
+        margin-top: 0;
+    }
+
+
+
+    /* SCROLL STUFF */
+    .scroll {
+        color: black;
+        width: 80%;
+        height: 850px;
+        margin: 0 auto;
+        background-image: url("../assets/whole_scroll.png");
+        background-size: 100% 330px;
+    }
+
+
+
+    .scroll__content {
+        width: 80%;
+        margin: 0 auto;
+        padding:  60px 40px;
+    }
+
+    .scroll__title {
+        margin: 0;
+        /* padding-top: 50px; */
+        font-family: 'Princess Sofia';
+        font-size: 48px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000000;
+        
+    }
+
+
+    .scroll__text {
+        text-align: center;
+        line-height: 24px;
+        font-size: 16px;
+    }
+
+
+    .scroll__underline {
+        text-decoration: underline;
+    }
+
+
+
+
+
+    /* NOTE PAD STUFF */
+
+    .container__main {
+        max-width: 700px;
+        margin: 120px auto;
+        padding: 40px;
+        
+    }
+
+
+    .note {
+        width: 521px;
+        height: 576px;
+        box-shadow: 0 8px 8px 0 rgba(35, 36, 36, 0.2);
+        background-color: #ffffff;
+        float: none;
+        background-image: url("../assets/note_lines.png");
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    .note__title {
+        font-family: 'Princess Sofia';
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .note__text {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+
+
+
+
+    /* VIDEO STUFF */
+    .video {
+        float: none;
+        text-align: center;
+        width: 600px;
+        margin: 0 auto;
+    }
+
+
+    .video__title {
+        width: 459px;
+        height: 64px;
+        font-family: 'Princess Sofia';
+        font-size: 56px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        margin: 80px auto 30px auto;
+        color: #000000;
+    }
+
+    .video__dummy {
+    width: 600px;
+    height: 356px;
+    background-color: #d8d8d8;
+    margin: 0 auto;
+    }
+
+
+
+
+    /* WAVE STUFF */
+    .wave {
+        background-color: #bbf3f9;
+        background-size: 100%;
+    }
+
+
+    .wave__title {
+        font-family: 'Princess Sofia';
+        font-size: 56px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000000;
+        padding-top: 100px;
+    }
+
+
+
+
+    .donate__container {
+        width: 100%;
+        padding: 50px 0 100px 0;
+        text-align: center;
+    }
+
+    .wave__button {
+        font-size: 16px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2;
+        text-decoration: none;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #ffffff;
+        border-radius: 32px;
+        background-color: #003986;
+        padding: 16px 32px;
+        width: 236px;
+    }
+
+
+    /* PORTHOLE STUFF */
+    .porthole__stretch {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .porthole {
+        width: 334px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+    }
+
+    .porthole__image {
+        width: 334px;
+        height: 334px;
+        object-fit: contain;
+        z-index: 1;
+    }
+
+    .icon {
+        height: 88px;
+        width: 65px;
+        object-fit: contain;
+        position: relative;
+        top: -190px;
+        left: 107px;
+        z-index: 2;
+    }
+
+    .icon__2 {
+        height: 88px;
+        width: 95px;
+        position: relative;
+        top: -190px;
+        left: 93px;
+        z-index: 2;
+    }
+
+    .footer{
+        height: 173px;
+        width: 100%;
+        transition: ease-in-out 0.2s;
+      }
+      .footer__text{
+          margin-left: 175px;
+          margin-right: 174px;
+          margin-top: 24px;
+          margin-bottom: 33px;
+      }
+      .social-media__icons{
+        position: absolute;
+        width: 768px;
+        left: 252px;
+        top: 84px;
+        margin-bottom: 40px;
+      }
+  }
 
 
 
 
 /* MEDIA FOR IPAD */
 @media only screen and (max-width: 768px) {
+
+    .nav {
+        width: 100%;
+        height: 104px;
+    }
+    .nav__list {
+        flex-direction: row;
+        margin-right: 0;
+    }
+    .nav__logo {
+        left: 20px;
+    }
+
+    .nav__button {
+        margin-right: 25px;
+    }
+    .nav__button-border {
+        margin-right: 25px;
+    }
+    .nav__links{
+        text-decoration: none;
+        color: #fff;
+    }
+
+
+
+    /* HERO IMAGE STUFF */
+
+
+    .hero__space {
+        height: 421px;
+        margin-top: 0;
+    }
+
+
+
+    /* SCROLL STUFF */
+    .scroll {
+        color: black;
+        width: 80%;
+        height: 850px;
+        margin: 0 auto;
+        background-image: url("../assets/whole_scroll.png");
+        background-size: 100% 330px;
+    }
+
+
+
+    .scroll__content {
+        width: 80%;
+        margin: 0 auto;
+        padding:  60px 40px;
+    }
+
+    .scroll__title {
+        margin: 0;
+        /* padding-top: 50px; */
+        font-family: 'Princess Sofia';
+        font-size: 48px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000000;
+        
+    }
+
+
+    .scroll__text {
+        text-align: center;
+        line-height: 24px;
+        font-size: 16px;
+    }
+
+
+    .scroll__underline {
+        text-decoration: underline;
+    }
+
+
+
+
+
+    /* NOTE PAD STUFF */
+
+    .container__main {
+        max-width: 700px;
+        margin: 120px auto;
+        padding: 40px;
+        
+    }
+
+
+    .note {
+        width: 521px;
+        height: 576px;
+        box-shadow: 0 8px 8px 0 rgba(35, 36, 36, 0.2);
+        background-color: #ffffff;
+        float: none;
+        background-image: url("../assets/note_lines.png");
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    .note__title {
+        font-family: 'Princess Sofia';
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .note__text {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+
+
+
+
+    /* VIDEO STUFF */
+    .video {
+        float: none;
+        text-align: center;
+        width: 600px;
+        margin: 0 auto;
+    }
+
+
+    .video__title {
+        width: 459px;
+        height: 64px;
+        font-family: 'Princess Sofia';
+        font-size: 56px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        margin: 80px auto 30px auto;
+        color: #000000;
+    }
+
+    .video__dummy {
+    width: 600px;
+    height: 356px;
+    background-color: #d8d8d8;
+    margin: 0 auto;
+    }
+
+
+
+
+    /* WAVE STUFF */
+    .wave {
+        background-color: #bbf3f9;
+        background-size: 100%;
+    }
+
+
+    .wave__title {
+        font-family: 'Princess Sofia';
+        font-size: 56px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000000;
+        padding-top: 100px;
+    }
+
+
+
+
+    .donate__container {
+        width: 100%;
+        padding: 50px 0 100px 0;
+        text-align: center;
+    }
+
+    .wave__button {
+        font-size: 16px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2;
+        text-decoration: none;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #ffffff;
+        border-radius: 32px;
+        background-color: #003986;
+        padding: 16px 32px;
+        width: 236px;
+    }
+
+
+    /* PORTHOLE STUFF */
+    .porthole__stretch {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .porthole {
+        width: 334px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+    }
+
+    .porthole__image {
+        width: 334px;
+        height: 334px;
+        object-fit: contain;
+        z-index: 1;
+    }
+
+    .icon {
+        height: 88px;
+        width: 65px;
+        object-fit: contain;
+        position: relative;
+        top: -190px;
+        left: 107px;
+        z-index: 2;
+    }
+
+    .icon__2 {
+        height: 88px;
+        width: 95px;
+        position: relative;
+        top: -190px;
+        left: 93px;
+        z-index: 2;
+    }
+
     .footer{
         height: 173px;
-        width: 768px;
+        width: 100%;
         transition: ease-in-out 0.2s;
       }
       .footer__text{
@@ -385,11 +897,113 @@ body {
 
 /* MEDIA FOR PHONE */
 @media only screen and (max-width: 400px) {
-    /* NOTE PAD STUFF */
-    .container__main {
-        max-width: 320px;
-        
-    }
+
+
+
+/* NAV STUFF */
+ .nav {
+    width: 100%;
+    height: 104px;
+    background-color: #232424;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+  }
+
+
+  .nav__list {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      margin-right: 40px;
+      padding: 0;
+  }
+
+
+  .nav__logo {
+      text-align: center;
+      position: absolute;
+      left: 10px;
+      font-family: 'Princess Sofia';
+      font-size: 36px;
+  }
+
+
+  .nav__button {
+      display: none;
+  }
+
+  .nav__button-border {
+      display: none;
+  }
+
+ 
+/* HERO IMAGE STUFF */
+.hero {
+    background-image: url('../assets/hero-image.png');
+    background-repeat: no-repeat;
+    background-size: 100% 592px;
+    width: 100%;
+    height: 592px;
+}
+
+
+.hero__space {
+    height: 300px;
+    margin-top: 0;
+}
+
+/* SCROLL STUFF */
+.scroll {
+    color: black;
+    min-width: 300px;
+    height: 800px;
+    margin: 0 auto;
+    background-image: url("../assets/whole_scroll.png");
+    background-size: 300px 600px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+
+
+.scroll__content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.scroll__title {
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
+    
+}
+
+
+.scroll__text {
+    text-align: center;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+
+.scroll__underline {
+    text-decoration: underline;
+}
+
+
+/* NOTE PAD STUFF */
+
+.container__main {
+    min-width: 320px;
+    margin: 200px auto;
+    margin-bottom: 100px;
+    
+}
+
 
 
     .note {
@@ -398,8 +1012,8 @@ body {
         box-shadow: 0 8px 8px 0 rgba(35, 36, 36, 0.2);
         background-color: #ffffff;
         float: none;
-        background-image: url("../assets/note_lines.png");
-        margin: 0 auto;
+        text-align: center;
+        margin: 80px auto;
     }
 
 
@@ -416,9 +1030,7 @@ body {
         padding-top: 20px;
     }
 
-    .note__text {
-        color: #232424;
-    }
+    
 
 
     .note__button {
@@ -446,6 +1058,7 @@ body {
         min-width: 287px;
         max-width: 340px;
         margin: 0 auto;
+        text-align: center;
     }
 
 
@@ -470,9 +1083,82 @@ body {
     margin: 0 auto;
     }
 
+
+
+/* WAVE STUFF */
+.wave {
+    background-color: #bbf3f9;
+    background-size: 100%;
+}
+
+
+.wave__title {
+    font-family: 'Princess Sofia';
+    font-size: 56px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    padding-top: 50px;
+}
+
+
+
+
+.donate__container {
+    width: 100%;
+    padding: 50px 0 100px 0;
+    text-align: center;
+}
+
+.wave__button {
+    font-size: 16px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 32px;
+    background-color: #003986;
+    padding: 16px 32px;
+    width: 236px;
+}
+
+
+/* PORTHOLE STUFF */
+.porthole__stretch {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+
+.porthole {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.porthole__image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    z-index: 1;
+}
+
+
+
     .footer{
         height: 201px;
-        width: 320px;
+        width: 100%;
         transition: ease-in-out 0.2s;
       }
       .footer__text{
