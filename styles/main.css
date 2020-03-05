@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800|Princess+Sofia&display=swap');
 
-body {
+html,body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans';
     font-size: 16px;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -65,7 +67,7 @@ body {
   }
 /* HERO IMAGE STUFF */
 .hero {
-    background-image: url('../assets/hero-image.png');
+    background-image: url('../assets/hero-image@3x.png');
     background-repeat: no-repeat;
     background-size: 100% 592px;
     max-width: 100%;
@@ -74,7 +76,7 @@ body {
 
 
 .hero__space {
-    height: 400px;
+    height: 340px;
     margin-top: 0;
 }
 
@@ -87,7 +89,7 @@ body {
     height: 800px;
     margin: 0 auto;
     background-image: url("../assets/whole_scroll.png");
-    background-size: 1094px 421px;
+    background-size: 1094px 461px;
     background-repeat: no-repeat;
 }
 
@@ -96,7 +98,7 @@ body {
 .scroll__content {
     width: 80%;
     margin: 0 auto;
-    padding: 100px;
+    padding: 110px;
 }
 
 .scroll__title {
@@ -132,7 +134,7 @@ body {
 .container__main {
     max-width: 1440px;
     margin: 200px auto;
-    padding: 72px;
+    padding: 120px 72px;
     margin-bottom: 600px;
     
 }
@@ -146,7 +148,7 @@ body {
     float: left;
     background-image: url("../assets/note_lines.png");
     margin: 0 auto;
-    padding-right: 5px;
+    /* padding-right: 5px; */
 }
 
 
@@ -193,8 +195,9 @@ body {
 /* VIDEO STUFF */
 .video {
     float: right;
-    width: 43%;
+    width: 50%;
     padding-left: 5px;
+    right: 46px;
 }
 
 
@@ -216,7 +219,9 @@ body {
   width: 632px;
   height: 356px;
   background-color: #d8d8d8;
-  margin: 0 auto;
+  margin-right: 46px;
+    
+    
 }
 
 
@@ -224,8 +229,10 @@ body {
 
 /* WAVE STUFF */
 .wave {
-    background-color: #bbf3f9;
-    background-size: 100%;
+    background-image: url("../assets/wave_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
 }
 
 
@@ -247,7 +254,7 @@ body {
 
 .donate__container {
     width: 100%;
-    padding: 50px 0 100px 0;
+    padding: 40px 0 100px 0;
     text-align: center;
 }
 
@@ -263,8 +270,8 @@ body {
     color: #ffffff;
     border-radius: 32px;
     background-color: #003986;
-    padding: 16px 32px;
-    width: 236px;
+    padding: 21px 32px;
+    width: 230px;
 }
 
 
@@ -282,6 +289,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    text-align: center;
 }
 
 .porthole__image {
@@ -338,7 +346,7 @@ body {
 }
 .social-media__icons{
     position: absolute;
-    left: 1104px;
+    left: 1050px;
     top: 16px;
     bottom: 15px;
   }
@@ -354,282 +362,8 @@ body {
 
 
 
-
-
-/* Media for normal laptop */
-@media only screen and (max-width: 1300px)
-{
-
-
-    .nav {
-        width: 100%;
-        height: 104px;
-    }
-    .nav__list {
-        flex-direction: row;
-        margin-right: 0;
-    }
-    .nav__logo {
-        left: 20px;
-    }
-
-    .nav__button {
-        margin-right: 25px;
-    }
-    .nav__button-border {
-        margin-right: 25px;
-    }
-    .nav__links{
-        text-decoration: none;
-        color: #fff;
-    }
-
-
-
-    /* HERO IMAGE STUFF */
-
-
-    .hero__space {
-        height: 421px;
-        margin-top: 0;
-    }
-
-
-
-    /* SCROLL STUFF */
-    .scroll {
-        color: black;
-        width: 80%;
-        height: 850px;
-        margin: 0 auto;
-        background-image: url("../assets/whole_scroll.png");
-        background-size: 100% 330px;
-    }
-
-
-
-    .scroll__content {
-        width: 80%;
-        margin: 0 auto;
-        padding:  60px 40px;
-    }
-
-    .scroll__title {
-        margin: 0;
-        /* padding-top: 50px; */
-        font-family: 'Princess Sofia';
-        font-size: 48px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.14;
-        letter-spacing: normal;
-        text-align: center;
-        color: #000000;
-        
-    }
-
-
-    .scroll__text {
-        text-align: center;
-        line-height: 24px;
-        font-size: 16px;
-    }
-
-
-    .scroll__underline {
-        text-decoration: underline;
-    }
-
-
-
-
-
-    /* NOTE PAD STUFF */
-
-    .container__main {
-        max-width: 700px;
-        margin: 120px auto;
-        padding: 40px;
-        
-    }
-
-
-    .note {
-        width: 521px;
-        height: 576px;
-        box-shadow: 0 8px 8px 0 rgba(35, 36, 36, 0.2);
-        background-color: #ffffff;
-        float: none;
-        background-image: url("../assets/note_lines.png");
-        margin: 0 auto;
-        text-align: center;
-    }
-
-
-    .note__title {
-        font-family: 'Princess Sofia';
-        text-align: center;
-        margin-bottom: 0;
-    }
-
-    .note__text {
-        text-align: center;
-        padding-bottom: 50px;
-    }
-
-
-
-
-
-    /* VIDEO STUFF */
-    .video {
-        float: none;
-        text-align: center;
-        width: 600px;
-        margin: 0 auto;
-    }
-
-
-    .video__title {
-        width: 459px;
-        height: 64px;
-        font-family: 'Princess Sofia';
-        font-size: 56px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.14;
-        letter-spacing: normal;
-        margin: 80px auto 30px auto;
-        color: #000000;
-    }
-
-    .video__dummy {
-    width: 600px;
-    height: 356px;
-    background-color: #d8d8d8;
-    margin: 0 auto;
-    }
-
-
-
-
-    /* WAVE STUFF */
-    .wave {
-        background-color: #bbf3f9;
-        background-size: 100%;
-    }
-
-
-    .wave__title {
-        font-family: 'Princess Sofia';
-        font-size: 56px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.14;
-        letter-spacing: normal;
-        text-align: center;
-        color: #000000;
-        padding-top: 100px;
-    }
-
-
-
-
-    .donate__container {
-        width: 100%;
-        padding: 50px 0 100px 0;
-        text-align: center;
-    }
-
-    .wave__button {
-        font-size: 16px;
-        font-weight: 800;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 2;
-        text-decoration: none;
-        letter-spacing: 1px;
-        text-align: center;
-        color: #ffffff;
-        border-radius: 32px;
-        background-color: #003986;
-        padding: 16px 32px;
-        width: 236px;
-    }
-
-
-    /* PORTHOLE STUFF */
-    .porthole__stretch {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-
-    .porthole {
-        width: 334px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        text-align: center;
-    }
-
-    .porthole__image {
-        width: 334px;
-        height: 334px;
-        object-fit: contain;
-        z-index: 1;
-    }
-
-    .icon {
-        height: 88px;
-        width: 65px;
-        object-fit: contain;
-        position: relative;
-        top: -190px;
-        left: 107px;
-        z-index: 2;
-    }
-
-    .icon__2 {
-        height: 88px;
-        width: 95px;
-        position: relative;
-        top: -190px;
-        left: 93px;
-        z-index: 2;
-    }
-
-    .footer{
-        height: 173px;
-        width: 100%;
-        transition: ease-in-out 0.2s;
-      }
-      .footer__text{
-          margin-left: 175px;
-          margin-right: 174px;
-          margin-top: 24px;
-          margin-bottom: 33px;
-      }
-      .social-media__icons{
-        position: absolute;
-        width: 768px;
-        left: 252px;
-        top: 84px;
-        margin-bottom: 40px;
-      }
-  }
-
-
-
-
 /* MEDIA FOR IPAD */
-@media only screen and (max-width: 768px) {
-
+@media only screen and (max-width: 1200px) and (min-width: 650px) {
     .nav {
         width: 100%;
         height: 104px;
@@ -659,7 +393,7 @@ body {
 
 
     .hero__space {
-        height: 421px;
+        height: 330px;
         margin-top: 0;
     }
 
@@ -668,11 +402,11 @@ body {
     /* SCROLL STUFF */
     .scroll {
         color: black;
-        width: 80%;
+        width: 90%;
         height: 850px;
         margin: 0 auto;
         background-image: url("../assets/whole_scroll.png");
-        background-size: 100% 330px;
+        background-size: 100% 400px;
     }
 
 
@@ -680,7 +414,7 @@ body {
     .scroll__content {
         width: 80%;
         margin: 0 auto;
-        padding:  60px 40px;
+        padding:  90px 40px;
     }
 
     .scroll__title {
@@ -737,305 +471,82 @@ body {
 
 
     .note__title {
-        font-family: 'Princess Sofia';
         text-align: center;
-        margin-bottom: 0;
+        padding-top: 30px;
+        padding-left: 0;
     }
 
     .note__text {
         text-align: center;
         padding-bottom: 50px;
     }
-
-
-
-
-
-    /* VIDEO STUFF */
-    .video {
-        float: none;
-        text-align: center;
-        width: 600px;
-        margin: 0 auto;
-    }
-
-
-    .video__title {
-        width: 459px;
-        height: 64px;
-        font-family: 'Princess Sofia';
-        font-size: 56px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.14;
-        letter-spacing: normal;
-        margin: 80px auto 30px auto;
-        color: #000000;
-    }
-
-    .video__dummy {
-    width: 600px;
-    height: 356px;
-    background-color: #d8d8d8;
-    margin: 0 auto;
-    }
-
-
-
-
-    /* WAVE STUFF */
-    .wave {
-        background-color: #bbf3f9;
-        background-size: 100%;
-    }
-
-
-    .wave__title {
-        font-family: 'Princess Sofia';
-        font-size: 56px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.14;
-        letter-spacing: normal;
-        text-align: center;
-        color: #000000;
-        padding-top: 100px;
-    }
-
-
-
-
-    .donate__container {
-        width: 100%;
-        padding: 50px 0 100px 0;
-        text-align: center;
-    }
-
-    .wave__button {
-        font-size: 16px;
-        font-weight: 800;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 2;
-        text-decoration: none;
-        letter-spacing: 1px;
-        text-align: center;
-        color: #ffffff;
-        border-radius: 32px;
-        background-color: #003986;
-        padding: 16px 32px;
-        width: 236px;
-    }
-
-
-    /* PORTHOLE STUFF */
-    .porthole__stretch {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-
-    .porthole {
-        width: 334px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        text-align: center;
-    }
-
-    .porthole__image {
-        width: 334px;
-        height: 334px;
-        object-fit: contain;
-        z-index: 1;
-    }
-
-    .icon {
-        height: 88px;
-        width: 65px;
-        object-fit: contain;
-        position: relative;
-        top: -190px;
-        left: 107px;
-        z-index: 2;
-    }
-
-    .icon__2 {
-        height: 88px;
-        width: 95px;
-        position: relative;
-        top: -190px;
-        left: 93px;
-        z-index: 2;
-    }
-
-    .footer{
-        height: 173px;
-        width: 100%;
-        transition: ease-in-out 0.2s;
-      }
-      .footer__text{
-          margin-left: 175px;
-          margin-right: 174px;
-          margin-top: 24px;
-          margin-bottom: 33px;
-      }
-      .social-media__icons{
-        position: absolute;
-        width: 768px;
-        left: 252px;
-        top: 84px;
-        margin-bottom: 40px;
-      }
-  }
-
-
-
-/* MEDIA FOR PHONE */
-@media only screen and (max-width: 400px) {
-
-
-
-/* NAV STUFF */
- .nav {
-    width: 100%;
-    height: 104px;
-    background-color: #232424;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    color: #fff;
-  }
-
-
-  .nav__list {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      margin-right: 40px;
-      padding: 0;
-  }
-
-
-  .nav__logo {
-      text-align: center;
-      position: absolute;
-      left: 10px;
-      font-family: 'Princess Sofia';
-      font-size: 36px;
-  }
-
-
-  .nav__button {
-      display: none;
-  }
-
-  .nav__button-border {
-      display: none;
-  }
-
- 
-/* HERO IMAGE STUFF */
-.hero {
-    background-image: url('../assets/hero-image.png');
-    background-repeat: no-repeat;
-    background-size: 100% 592px;
-    width: 100%;
-    height: 592px;
-}
-
-
-.hero__space {
-    height: 300px;
-    margin-top: 0;
-}
-
-/* SCROLL STUFF */
-.scroll {
-    color: black;
-    min-width: 300px;
-    height: 800px;
-    margin: 0 auto;
-    background-image: url("../assets/whole_scroll.png");
-    background-size: 300px 600px;
-    background-repeat: no-repeat;
-    text-align: center;
-}
-
-
-
-.scroll__content {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.scroll__title {
-    margin: 0 auto;
-    padding-top: 100px;
-    text-align: center;
-    
-}
-
-
-.scroll__text {
-    text-align: center;
-    line-height: 24px;
-    font-size: 14px;
-}
-
-
-.scroll__underline {
-    text-decoration: underline;
-}
-
-
-/* NOTE PAD STUFF */
-
-.container__main {
-    min-width: 320px;
-    margin: 200px auto;
-    margin-bottom: 100px;
-    
-}
-
-
-
-    .note {
-        width: 287px;
-        height: 1000px;
-        box-shadow: 0 8px 8px 0 rgba(35, 36, 36, 0.2);
-        background-color: #ffffff;
-        float: none;
-        text-align: center;
-        margin: 80px auto;
-    }
-
-
-    .note__title {
-        height: 56px;
-        font-family: 'Princess Sofia';
-        font-size: 48px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.17;
-        letter-spacing: normal;
-        color: #000000;
-        padding-top: 20px;
-    }
-
-    
-
 
     .note__button {
         width: 162px;
         height: 32px;
+        margin: 48px 0 40px 20px;
+    }
+
+
+
+
+
+    /* VIDEO STUFF */
+    .video {
+        float: none;
+        text-align: center;
+        width: 600px;
+        margin: 0 auto;
+    }
+
+
+    .video__title {
+        width: 459px;
+        height: 64px;
+        font-family: 'Princess Sofia';
+        font-size: 56px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        margin: 80px auto 30px auto;
+        color: #000000;
+    }
+
+    .video__dummy {
+    width: 600px;
+    height: 356px;
+    background-color: #d8d8d8;
+    margin: 0 auto;
+    }
+
+
+
+
+    /* WAVE STUFF */
+    
+.wave {
+    background-image: url("../assets/wavey_wave.png");
+    background-size: 100% 100%;
+}
+
+
+
+    .wave__title {
+        padding-top: 140px;
+    }
+
+
+
+
+    .donate__container {
+        width: 100%;
+        padding: 20px 0 80px 0;
+        text-align: center;
+    }
+
+    .wave__button {
         font-size: 16px;
         font-weight: 800;
         font-stretch: normal;
@@ -1048,135 +559,475 @@ body {
         border-radius: 32px;
         background-color: #003986;
         padding: 20px 40px;
-        margin-left: 25px;
+        width: 236px;
     }
 
 
-    /* VIDEO STUFF */
-    .video {
-        float: none;
-        min-width: 287px;
-        max-width: 340px;
-        margin: 0 auto;
+    /* PORTHOLE STUFF */
+    .porthole__stretch {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .porthole {
+        width: 334px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         text-align: center;
     }
 
+    .porthole__image {
+        width: 334px;
+        height: 334px;
+        object-fit: contain;
+        z-index: 1;
+    }
 
-    .video__title {
-        height: 56px;
-        width: 287px;
-        margin: 100px auto;
+    .icon {
+        height: 88px;
+        width: 65px;
+        object-fit: contain;
+        position: relative;
+        top: -190px;
+        left: 107px;
+        z-index: 2;
+    }
+
+    .icon__2 {
+        height: 88px;
+        width: 95px;
+        position: relative;
+        top: -190px;
+        left: 93px;
+        z-index: 2;
+    }
+
+    .footer{
+        height: 173px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .footer__text{
+       margin:  32px auto; 
+
+      }
+      .social-media__icons{
+        margin: 0 auto;
+        position: unset;
+        text-align: center;
+      }
+
+        #twitter{
+            margin-left: 24px;
+        }
+        #youtube{
+            margin-left: 24px;
+        }
+        #facebook{
+            margin-left: 24px;
+        }
+  }
+
+
+
+
+
+/* MEDIA FOR PHONE */
+@media only screen and (min-width: 320px) and (max-width: 649px) {
+
+
+
+
+ .nav {
+        width: 100%;
+        height: 64px;
+
+    }
+    .nav__list {
+        flex-direction: row;
+        margin-right: 0;
+    }
+    .nav__logo {
+        left: 20px;
+        width: 50px;
+        font-size: 21px;
+        letter-spacing: 0;
+        line-height: 1.7rem;
+    }
+
+    .ham__container {
+        margin: 0 auto;
+        text-align: center;
+        padding-right: 16px;
+        cursor: pointer;
+    
+    }
+
+
+    .ham {
+        width: 15px;
+        height: 2.5px;
+        background: #fff;
+        color: #fff;
+
+    }
+
+    .ham1 {
+        width: 30px;
+        margin-bottom: 8px;
+    }
+    .ham2 {
+        width: 30px;
+        margin-bottom: 8px; 
+
+    }
+
+    .ham3 {
+        width: 30px;
+        margin-top: 8px;
+    }
+
+    .nav__button {
+        margin-right: 25px;
+        display: none;
+    }
+    .nav__button-border {
+        margin-right: 25px;
+        display: none;
+    }
+    .nav__links{
+        text-decoration: none;
+        color: #fff;
+        display: none;
+    }
+
+
+
+    /* HERO IMAGE STUFF */
+
+
+    .hero__space {
+        height: 164px;
+        margin-top: 0;
+    }
+
+    .hero {
+        background-size: 100% 424px;
+    }
+
+
+
+    /* SCROLL STUFF */
+    .scroll {
+        color: black;
+        width: 90%;
+        height: 800px;
+        margin: 0 auto;
+        background-image: url("../assets/whole_scroll.png");
+        background-size: 100% 521px;
+    }
+
+
+
+    .scroll__content {
+        width: 80%;
+        margin: 0 auto;
+        padding:  90px 40px 90px 30px;
+    }
+
+    .scroll__title {
+        margin: 0;
+        padding-top: 30px;
         font-family: 'Princess Sofia';
         font-size: 48px;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
-        line-height: 1.17;
+        line-height: 1.14;
         letter-spacing: normal;
+        text-align: center;
+        color: #000000;
+        
+    }
+
+
+    .scroll__text {
+        text-align: center;
+        line-height: 24px;
+        font-size: 14px;
+    }
+
+
+    .scroll__underline {
+        text-decoration: underline;
+    }
+
+
+
+
+
+    /* NOTE PAD STUFF */
+
+    .container__main {
+        max-width: 100%;
+        margin: 48px auto;
+        padding: 40px  0 ;
+        
+    }
+
+
+    .note {
+        width: 90%;
+        height: 790px;
+        box-shadow: 0 8px 8px 0 rgba(35, 36, 36, 0.2);
+        background-color: #ffffff;
+        float: none;
+        background-image: url("../assets/note_lines.png");
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    .note__title {
+        text-align: center;
+        padding-top: 50px;
+        padding-left: 0;
+        font-size: 48px;
+    }
+
+    .note__text {
+        text-align: center;
+        padding: 10px 5px 40px 5px;
+    }
+
+    .note__button {
+        width: 100px;
+        height: 32px;
+        margin: 68px 20px 70px 20px;
+    }
+
+
+
+
+
+    /* VIDEO STUFF */
+    .video {
+        float: none;
+        text-align: center;
+        width: 287px;
+        margin: 0 auto;
+    }
+
+
+    .video__title {
+        width: 287px;
+        height: 112px;
+        font-family: 'Princess Sofia';
+        font-size: 48px;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        margin: 80px auto 24px auto;
         color: #000000;
     }
 
     .video__dummy {
-    width: 287px;
+    width: 90%;
     height: 161px;
     background-color: #d8d8d8;
     margin: 0 auto;
+
     }
 
 
 
-/* WAVE STUFF */
+
+    /* WAVE STUFF */
+    
 .wave {
-    background-color: #bbf3f9;
-    background-size: 100%;
+    background-image: url("../assets/wave_top_mob1.png");
+    background-size: 100% 100%;
 }
 
 
-.wave__title {
-    font-family: 'Princess Sofia';
-    font-size: 56px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.14;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000000;
-    padding-top: 50px;
-}
+    .wave__title {
+        padding-top: 140px;
+    }
 
 
+    .donate__container {
+        width: 100%;
+        padding: 20px 0 80px 0;
+        text-align: center;
+    }
+
+    .wave__button {
+        font-size: 16px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2;
+        text-decoration: none;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #ffffff;
+        border-radius: 32px;
+        background-color: #003986;
+        padding: 20px 40px;
+        width: 236px;
+    }
 
 
-.donate__container {
-    width: 100%;
-    padding: 50px 0 100px 0;
-    text-align: center;
-}
-
-.wave__button {
-    font-size: 16px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2;
-    text-decoration: none;
-    letter-spacing: 1px;
-    text-align: center;
-    color: #ffffff;
-    border-radius: 32px;
-    background-color: #003986;
-    padding: 16px 32px;
-    width: 236px;
-}
+    /* PORTHOLE STUFF */
+    .porthole__stretch {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5px 0 27px;
+    }
 
 
-/* PORTHOLE STUFF */
-.porthole__stretch {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0;
-}
+    .porthole {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+    }
 
+    .porthole p {
+        width: 90%;
+        text-align: center;
+    }
 
-.porthole {
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
+    .porthole__image {
+        width: 280px;
+        height: 280px;
+        text-align: center;
+        object-fit: contain;
+        z-index: 1;
+    }
 
-.porthole__image {
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-    z-index: 1;
-}
+    .icon {
+        height: 88px;
+        width: 65px;
+        object-fit: contain;
+        position: relative;
+        top: -190px;
+        left: 107px;
+        z-index: 2;
+    }
 
-
+    .icon__2 {
+        height: 88px;
+        width: 95px;
+        position: relative;
+        top: -190px;
+        left: 93px;
+        z-index: 2;
+    }
 
     .footer{
-        height: 201px;
+        height: 173px;
         width: 100%;
-        transition: ease-in-out 0.2s;
+        margin: 0 auto;
       }
       .footer__text{
-        font-size: 16px;
-        width: 288px;
-        text-align: center;
-        margin-left: 16px;
-        margin-right: 16px;
-        margin-top: 24px;
-        margin-bottom: 121px;
+       margin:  22px auto; 
+       width: 80%;
+       padding-bottom: 25px;
+
       }
       .social-media__icons{
-        position: absolute;
-        width: 320px;
-        left: 16px;
-        top: 112px;
-        margin-bottom: 40px;
+        margin: 0 auto;
+        position: unset;
+        text-align: center;
       }
 
+        #twitter{
+            margin-left: 24px;
+        }
+        #youtube{
+            margin-left: 24px;
+        }
+        #facebook{
+            margin-left: 24px;
+        }
 
+
+  .overlay{
+      position: fixed; /* Sit on top of the page content */
+      width: 100%; /* Full width (cover the whole page) */
+      height: 100%; /* Full height (cover the whole page) */
+      top: 0;
+      display: none;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #232424; /* Black background with opacity */
+      z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+      /* cursor: pointer; Add a pointer on hover */
+      transition: 0.4s ease-in-out;
+      }
+
+    .cross {
+        color:#fff;
+        float: right;
+        padding-right: 20px;
+        padding-top: 20px;
+        font-size: 40px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+    }
+
+    .mob__li {
+        list-style: none;
+        padding-top: 40px;
+        margin: 0 auto;
+    }
+
+    .mob__link {
+      text-decoration: none;
+      width: 99px;
+      height: 28px;
+      font-size: 14px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2;
+      letter-spacing: 0.88px;
+      text-align: center;
+      margin-right: 32px;
+      padding: 12px 0 12px 0; color: #fff;
+    }
+
+    .mob__link-btn {
+      width: 99px;
+      border-radius: 32px;
+      border: solid 2px #f5f5f5;
+      padding: 10px 24px;
+      font-size: 14px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2;
+      letter-spacing: 0.88px;
+      text-align: center;
+    }
+
+    .mob__nav {
+        margin: 100px auto;
+        display: block;
+        text-align: center;
+        
+    }
+
+    
+    
   }
