@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800|Princess+Sofia&display=swap');
 
+
 html,body {
     margin: 0;
     padding: 0;
@@ -379,6 +380,84 @@ html,body {
     margin-left: 24px;
   }
 
+
+/* NOTE PAD STUFF */
+@media only screen and (max-width: 1490px) and (min-width: 1200px) {
+
+.container__main {
+    max-width: 1200px;
+    margin: 200px auto;
+    padding: 120px 12px;
+    margin-bottom: 64px;
+    
+}
+
+
+.note {
+    width: 612px;
+    height: 644px;
+    box-shadow: 0 8px 8px 0 rgba(35, 36, 36, 0.2);
+    background-color: #ffffff;
+    float: left;
+    background-image: url("../assets/note_lines.png");
+    margin: 0 auto;
+    /* padding-right: 5px; */
+}
+
+
+.note__title {
+    height: 54px;
+    font-family: 'Open Sans';
+    font-size: 48px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    color: #000000;
+    padding-left: 56px;
+    margin-bottom: 0;
+}
+
+.note__text {
+    padding: 16px 56px 48px 56px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #232424;
+}
+
+
+.note__button {
+    width: 162px;
+    height: 32px;
+    font-size: 16px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 32px;
+    background-color: #003986;
+    padding: 20px 40px;
+    margin: 48px 0 40px 56px;
+}
+
+
+/* Child Image Stuff */
+.imageChild{
+    height: 528px;
+    width: 512px;
+    padding-left: 42px;
+    margin-top: 64px;
+
+}
+
+
+}
 
   /* background media for ipad */
 
